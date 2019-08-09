@@ -84,4 +84,8 @@ public class Transform {
 	public String toString() {
 		return "[" + translation.toString() + ":" +  rotation.toString() + ":" + scaling.toString() + "]";
 	}
+
+	public void addTranslation(float xTarg, float yTarg, int i) {
+		translation = translation.add(xTarg,yTarg,i);
+	}
 }
